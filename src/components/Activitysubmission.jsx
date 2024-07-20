@@ -4,6 +4,7 @@ import { addDoc, collection } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { auth, db, storage } from '../firebase';
 import Navbar from './Navbar';
+import Footer from './Footer'; // Import the Footer component
 import { onAuthStateChanged } from 'firebase/auth';
 
 const CameraSection = ({ photoURL, setPhotoURL, startCamera, capturePhoto, videoRef, canvasRef }) => (
@@ -315,12 +316,13 @@ const ActivitySubmission = () => {
         <GreenCreditQuestions responses={responses} handleChange={handleResponseChange} />
         <button
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 font-bold"
+          className="w-full bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 font-bold"
           onClick={handleSubmit}
         >
           SUBMIT ACTIVITY
         </button>
       </div>
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 };

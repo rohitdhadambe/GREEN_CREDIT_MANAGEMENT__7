@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'homepage-bg': "url('/src/assets/backgroundimg.jpeg')", // Ensure the path is correct
+        'homepage-bg': "url('/src/assets/backgroundimg.jpeg')",
       },
       animation: {
         bounce: 'bounce 2s infinite',

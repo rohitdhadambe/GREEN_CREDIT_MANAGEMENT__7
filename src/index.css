@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Ensure a clean font for readability */
+  }
+  
+ 
+  #root {
+    height: 100%;
+  }
+  
+  .bg-homepage-bg {
+    background-image: url('/src/assets/backgroundimg.jpeg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+  }
+  
