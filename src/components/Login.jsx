@@ -44,7 +44,7 @@ const Login = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               required
             />
           </div>
@@ -54,19 +54,19 @@ const Login = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-500 ease-in-out transform hover:scale-105"
+            className="w-full px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-500 ease-in-out transform hover:scale-105"
           >
             Login
           </button>
         </form>
         <p className="text-center mt-4 text-sm text-gray-600 animate-fade-in">
-          Don't have an account? <Link className="text-blue-500 hover:underline" to={"/register"}>Register</Link>
+          Don't have an account? <Link className="text-green-500 hover:underline" to={"/register"}>Register</Link>
         </p>
       </div>
     </div>
