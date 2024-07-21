@@ -73,20 +73,47 @@ const CreditSelection = ({ selectedCreditType, handleCreditSelection }) => (
 const GreenCreditQuestions = ({ responses, handleChange }) => (
   <div className="mb-6 p-4 border-2 border-solid border-gray-300 rounded-lg shadow-lg hover:shadow-2xl hover:border-gray-500 transition-shadow duration-300">
     <h4 className="text-lg font-bold mb-4">ENTER YOUR REGIONAL DETAILS -</h4>
-    {Object.keys(responses).map((key, index) => (
-      <div className="mb-4" key={index}>
-        <label className="block font-medium text-gray-700">
-          {index + 1}. {`Question ${index + 1}`}
-        </label>
-        <input
-          type="text"
-          name={key}
-          value={responses[key]}
-          onChange={handleChange}
-          className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
-        />
-      </div>
-    ))}
+    <div className="mb-4">
+      <label className="block font-medium text-gray-700">1.Enter the hectare you covered during tree planting.</label>
+      <input
+        type="text"
+        name="city"
+        value={responses.city}
+        onChange={handleChange}
+        className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block font-medium text-gray-700">2.Enter the number of saplings you planted on that particular land.
+      </label>
+      <input
+        type="text"
+        name="locality"
+        value={responses.locality}
+        onChange={handleChange}
+        className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block font-medium text-gray-700">3.Enter your actual landmark.</label>
+      <input
+        type="text"
+        name="region"
+        value={responses.region}
+        onChange={handleChange}
+        className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block font-medium text-gray-700">4. Was this activity carried out individually or by a group (ANY NGO).</label>
+      <input
+        type="text"
+        name="country"
+        value={responses.country}
+        onChange={handleChange}
+        className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
+      />
+    </div>
   </div>
 );
 
@@ -100,7 +127,7 @@ const LocationInfo = ({ latitude, longitude, locationDetails, fetchingLocation }
         <p><strong>Latitude:</strong> {latitude}</p>
         <p><strong>Longitude:</strong> {longitude}</p>
         <p><strong>City:</strong> {locationDetails.locality || ''}</p>
-        <p><strong>Locality:</strong> { locationDetails.city || ''}</p>
+        <p><strong>Locality:</strong> {locationDetails.city || ''}</p>
         <p><strong>Region:</strong> {locationDetails.region || ''}</p>
         <p><strong>Country:</strong> {locationDetails.country || ''}</p>
       </div>
@@ -118,10 +145,10 @@ const ActivitySubmission = () => {
   const [status, setStatus] = useState('before');
   const [selectedCreditType, setSelectedCreditType] = useState('');
   const [responses, setResponses] = useState({
-    question1: '',
-    question2: '',
-    question3: '',
-    question4: '',
+    city: '',
+    locality: '',
+    region: '',
+    country: '',
   });
   const [userPhone, setUserPhone] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
