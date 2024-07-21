@@ -81,8 +81,7 @@ const GreenCreditQuestions = ({ responses, handleChange }) => (
         value={responses.area || ''}
         onChange={handleChange}
         className="mt-1 p-2 border-2 border-gray-300 rounded-lg w-full shadow-inner"
-        placeholder="e.g., 10 H
-        ectares"
+        placeholder="e.g., 10 Hectares"
       />
     </div>
     <div className="mb-4">
