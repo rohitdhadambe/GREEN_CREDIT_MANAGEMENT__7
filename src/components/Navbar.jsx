@@ -22,7 +22,7 @@ const Navbar = ({ user }) => {
   const handleSignOut = useSignOut();
 
   return (
-    <nav className="bg-gray-800 text-white py-4 border-b-4 border-green-500 w-full">
+    <nav className="bg-gray-800 text-white py-2 border-b-4 border-green-500 w-full">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-xl font-bold">GREEN CREDIT MANAGEMENT</h1>
 

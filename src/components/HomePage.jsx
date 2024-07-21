@@ -15,19 +15,19 @@ const HomePage = () => {
           </p>
 
           {/* About Us Section */}
-          <section className="bg-homepage-bg bg-cover bg-center p-8 w-full max-w-4xl mx-auto border-4 border-green-500 rounded-lg shadow-lg">
-            <div className="flex-grow flex flex-col items-center bg-black bg-opacity-70 border-4 ">
-            <h2 className="text-xl font-bold mb-6 text-white">About Us...!</h2>
-            <p className="mb-4 text-white">
+          <section className="bg-homepage-bg bg-cover bg-center p-8 w-full max-w-4xl mx-auto rounded-lg shadow-lg">
+            <div className="flex-grow flex flex-col items-center bg-black bg-opacity-70 border-4 border-green-500 ">
+            <h2 className="text-xl font-bold mb-6 text-green">About Us...!</h2>
+            <p className="mb-5 text-white">
               <strong>Green Credit Management</strong> is an innovative initiative designed to promote and reward environmental sustainability through a structured credit system. Our project aims to incentivize individuals and organizations to engage in eco-friendly activities that positively impact our planet. By participating in this voluntary program, stakeholders contribute to a greener and more sustainable future.
             </p>
-            <p className="mb-4 text-white">
+            <p className="mb-5 text-white">
               <strong>Our Vision</strong>: Green Credit refers to a unit of incentive awarded to those who actively engage in practices that benefit the environment. Our goal is to encourage widespread adoption of sustainable practices by recognizing and rewarding efforts that contribute to environmental preservation.
             </p>
-            <p className="mb-4 text-white">
+            <p className="mb-5 text-white">
               <strong>What We Cover</strong>:
             </p>
-            <ul className="list-disc list-inside mb-4 text-white">
+            <ul className="list-disc list-inside mb-5 text-white">
               <li><strong>Tree Plantation:</strong> Encouraging the planting of trees to enhance green cover and combat deforestation.</li>
               <li><strong>Water Management:</strong> Implementing strategies to conserve and manage water resources effectively.</li>
               <li><strong>Sustainable Agriculture:</strong> Advocating for eco-friendly and sustainable agricultural practices.</li>
@@ -43,7 +43,7 @@ const HomePage = () => {
               <li><strong>Compatibility with Carbon Credits:</strong> Although designed independently, we carefully consider the potential overlaps between Green Credits and carbon credits to ensure clarity and effectiveness.</li>
               <li><strong>Accounting for Regional Differences:</strong> We strive to account for regional variations in environmental impact, making adjustments to establish fair and accurate credit values across different geographical areas.</li>
             </ul>
-            <p className="text-white">
+            <p className="text-white mb-5 mt-5">
               At <strong>Green Credit Management</strong>, we believe that every action counts in our mission to create a sustainable future. Join us in making a difference and earning recognition for your environmental efforts!
             </p>
             </div>
