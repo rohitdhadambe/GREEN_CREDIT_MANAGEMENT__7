@@ -295,6 +295,8 @@ const ActivitySubmission = () => {
         return 0.741;
         case 'coimbatore':
         return 1.111;
+        case 'kolhapur':
+        return 1.001;
       default:
         return null; // Return null for other localities, adjust as per your data
     }
@@ -355,5 +357,6 @@ const ActivitySubmission = () => {
     </div>
   );
 };
+
 
 export default ActivitySubmission;
