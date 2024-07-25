@@ -293,11 +293,9 @@ const ActivitySubmission = () => {
     switch (locality) {
         case 'Pune':
         return 0.741;
-        case 'coimbatore':
-        return 1.111;
-        case 'kolhapur':
-        return 1.001;
-      default:
+        case 'Sulur':
+        return 0.641;
+        default:
         return null; // Return null for other localities, adjust as per your data
     }
   };

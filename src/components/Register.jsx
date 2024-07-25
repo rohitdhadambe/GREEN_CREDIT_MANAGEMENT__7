@@ -21,20 +21,19 @@ const Register = () => {
     e.preventDefault();
     setError(null);
 
-    // Validation
     const validateEmail = (email) => {
       const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
       return re.test(String(email).toLowerCase());
-    }
+    };
     
     const validatePhone = (phone) => {
-      const re = /^\d{10}$/; // Simple validation for a 10-digit phone number
+      const re = /^\d{10}$/;
       return re.test(String(phone));
-    }
+    };
     
     const validatePassword = (password) => {
-      return password.length >= 8; // Ensure password is at least 8 characters long
-    }
+      return password.length >= 8;
+    };
     
     if (!name || !phone || !email || !password) {
       setError('Please fill in all fields.');
@@ -56,16 +55,6 @@ const Register = () => {
       return;
     }
     
-    // If all validations pass
-    setError(''); // Clear any previous errors
-    // Proceed with form submission or other logic
-    
-
-    if (password.length < 6) {
-      setError('Password should be at least 6 characters long.');
-      return;
-    }
-
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
@@ -105,8 +94,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100  ">
-      <div className="w-full max-w-3xl p-8 bg-white rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105  border-2 border-green-500">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-3xl p-8 bg-white rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 border-2 border-green-500">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6 animate-fade-in">Register</h2>
         {error && <p className="text-center text-red-500 mb-4 animate-fade-in">{error}</p>}
         <form onSubmit={handleRegister} className="space-y-6">
@@ -166,4 +155,5 @@ const Register = () => {
     </div>
   );
 };
+
 export default Register;
