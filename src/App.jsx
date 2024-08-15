@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import Register from './components/Register';
 import ActivitySubmission from './components/Activitysubmission';
 import Finish from './components/Finish';
+//hello
 
 // Component to handle the routing for logout
 const LogoutRedirect = () => {
