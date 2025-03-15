@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
@@ -66,7 +66,7 @@ const Login = () => {
           </button>
         </form>
         <p className="text-center mt-4 text-sm text-gray-600 animate-fade-in">
-          Don't have an account? <Link className="text-green-500 hover:underline" to={"/register"}>Register</Link>
+          Dont have an account? <Link className="text-green-500 hover:underline" to={"/register"}>Register</Link>
         </p>
       </div>
     </div>
